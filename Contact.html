@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<link href="style.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+    <script type="application/javascript">
+      function validate() {
+        var a = document.forms["addressForm"]["name"].value;
+        if (a == "") {
+          alert("Name entry invalid");
+          document.forms["addressForm"]["name"].focus();
+          return false;
+        }
+		
+		  var b = document.forms["addressForm"]["email"].value;
+        if (b == "") {
+          alert("Email address entry invalid");
+          document.forms["addressForm"]["email"].focus();
+          return false;
+        }
+		  var c = document.forms["addressForm"]["radio"].value;
+        if (c == "") {
+          alert("Gender entry invalid");
+          document.forms["addressForm"]["radio"].focus();
+          return false;
+        }
+		
+		
+		}
+		 </script>
+
+		
+		
+		
+<body>
+
+ <div id="Navigation">
+   
+   <li><a style="color: #0066cc;" href="home.html">Home</a></li>
+   <li><a style="color: #0066cc;" href="Resume.html">Resume</a></li>
+   <li><a style="color: #0066cc;" href="Projects.html">Projects</a></li>
+   <li><a style="color: #0066cc;" href="Contact.html">Contact</a></li>
+   </ul>
+ </div>  
+ 
+<header>
+<h1>Contact</h1>
+</header>
+
+
+    <div class="container">
+    <form id="addressForm" action="feedback.html" onsubmit="return validate()">
+	  
+      <label for="name">Name</label>
+	  <br>
+      <input type="text" id="name" name="name" placeholder="Name..">
+	  <br>
+	  
+	  <label for="email">Email Address</label>
+	  <br>
+      <input type="text" id="email" name="email" placeholder="Email..">
+	  <br>
+	   <p>
+	  Select your gender:
+	  <br>
+	  <input type="radio" name="gender" value="male"> Male<br>
+	  <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+	  </p>
+	  
+	   <label for="question">Do you like the site so far?</label>
+      <select id="question name= "Feedback">
+	    <option value="Shipped">Yes</option>
+		<option value="Pickup">No</option>
+      </select>
+	  
+	   <p>
+          <label>Additional Comments</label>
+          <textarea>
+		  
+		  </textarea>
+        </p>
+
+	  
+      <input type="submit" value="Submit">
+	  <input type="reset">
+
+    </form>
+
+   
+  </div>
+
+
+
+
+
+<!--
+
+ <label for="name">Name</label>
+	  <br>
+      <input type="text" id="name" name="name" placeholder="Name..">
+	  <br>
+		
+	  <label for="email">Email Address</label>
+	  <br>
+      <input type="text" id="email" name="email" placeholder="Email..">
+	  
+	  <p>
+	  Select your gender:
+	  <br>
+	  <input type="radio" name="gender" value="male"> Male<br>
+	  <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+	  </p>
+	  
+	   <p>
+          <label>Additional Comments</label>
+          <textarea>
+		  
+		  </textarea>
+        </p>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>Creator and Author: Param Patel</footer>
+
+
+</body>
+</html>
